@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+    <div><a routerLink="/">Welcome</a></div>
+    <div fxFlex fxLayout fxLayoutAlign="flex-end">
+      <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+        <li>
+          <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+            <li *ngFor="let locale of localesList">
+              <a href="/{{locale.code}}">
+                <img [src]="locale.imagePath" alt="{{locale.code}}">
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li *ngIf="!isAuthorized"><a routerLink="/login">Login</a></li>
+        <li *ngIf="isAuthorized"><a routerLink="/resume">Resume</a></li>
+        <li *ngIf="isAuthorized" (click)="onLogout()"><a routerLink="#">Logout</a></li>
+      </ul>
+    </div>
+  </mat-toolbar>

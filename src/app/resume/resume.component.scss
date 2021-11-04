@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 30px 10px 30px 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section.general-info {
+  margin-bottom: 15px;
+}
+
+.info-card {
+  max-width: 400px;
+  margin-bottom: 8px;
+
+  mat-card-title-group img{
+    border-radius: 50%;
+  }
+
+  mat-card-content a {
+    text-decoration: none;
+  }
+
+  mat-card-content img {
+    width: 20px;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.section-title {
+  background-color: #3f51b5;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.experience article {
+  margin-bottom: 30px;
+
+  .speciality {
+    font-weight: 700;
+  }
+}
+
+.university, .company {
+  text-align: right;
+}
+
+.school {
+  margin-bottom: 10px;
+}
+

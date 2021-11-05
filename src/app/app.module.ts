@@ -11,7 +11,13 @@ import { ResumeComponent } from './resume/resume.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { AuthService } from './auth/auth.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateHttpLoader} from '@ngx-translate/http-loader' ;
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -27,7 +33,16 @@ import { AuthService } from './auth/auth.service';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'en-US',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

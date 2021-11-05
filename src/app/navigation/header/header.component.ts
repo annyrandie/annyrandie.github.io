@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { AuthService } from 'src/app/auth/auth.service';
 import { Subscription } from 'rxjs';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
   isAuthorized = false;
   authSubscription: Subscription;
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService,
+    private translateService: TranslateService) { }
 
   localesList = [
     {code: 'en-US', label: 'English', imagePath: '../assets/images/usflag.svg'},
@@ -26,6 +28,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   onLogout() {
     this.authService.logout();
+  }
+
+  selectLanguage(event) {
+    this.translateService.use(event.target.value);
   }
 
   ngOnDestroy() {

@@ -4,7 +4,7 @@
       <input 
         type="text"
         matInput 
-        placeholder="Your login" 
+        placeholder="{{'your_login' | translate}}" 
         ngModel 
         name="login">
     </mat-form-field>
@@ -12,11 +12,11 @@
       <input 
         type="password" 
         matInput 
-        placeholder="Your password" 
+        placeholder="{{'your_password' | translate}}" 
         ngModel 
         name="password">
-      <mat-hint>Should be 4 characters long:)</mat-hint>
+      <mat-hint>{{'hint' | translate}}</mat-hint>
     </mat-form-field>
-    <button type="submit" mat-raised-button color="primary">Login</button>
+    <button type="submit" mat-raised-button color="primary">{{'login' | translate}}</button>
   </form>
 </section>

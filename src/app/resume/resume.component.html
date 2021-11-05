@@ -2,8 +2,8 @@
   <section class="general-info" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
     <mat-card class="info-card">
       <mat-card-title-group fxLayout="row" fxLayout.lt-md="column">
-        <mat-card-title>Hanna Pereverzieva</mat-card-title>
-        <mat-card-subtitle>Angular Developer</mat-card-subtitle>
+        <mat-card-title>{{"name" | translate}}</mat-card-title>
+        <mat-card-subtitle>{{"front-end" | translate}}</mat-card-subtitle>
         <img mat-card-xl-image src="../../assets/images/me.jpg" >
       </mat-card-title-group>
       <mat-card-content fxLayout fxLayoutAlign="flex-start" fxLayoutGap="10px">
@@ -17,50 +17,48 @@
       </mat-card-content>
     </mat-card>
     <div class="skills">
-      <h2 class="section-title">SKILLS</h2>
+      <h2 class="section-title">{{'skills' | translate | uppercase}} </h2>
       <ul>
         <li>JavaScript, HTML, PUG, CSS, SCSS, Bootstrap v4, Angular, Angular Material, TypeScript, REST API, Firebase.</li>
         <li>npm, Webpack, Git, Jira, Trello, TFS.</li>
-        <li>Engineering, team managment</li>
+        <li>{{"eng" | translate}}</li>
+        <li>{{"manager" | translate}}</li>
         <li>English - Upper-Intermediate</li>
       </ul>
     </div>
   </section>
   <section class="experience">
-    <h2 class="section-title">EXPERIENCE</h2>
+    <h2 class="section-title">{{"exp_section" | translate | uppercase}}</h2>
     <article>
       <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between">
-        <div class="date">2016 - present</div>
+        <div class="date">{{"from" | translate}} 2016</div>
         <div class="company">
-          <p class="speciality">Systems engineer, Angular</p>
-          <p class="company-name">Progresstech-Ukraine LLC.</p>
+          <p class="speciality">{{"company1.position" | translate}}</p>
+          <p class="company-name">{{"company1.company" | translate}}</p>
         </div>
       </div>
       <div class="duties">
         <ul>
-          <li>Angular Front End Developer</li>
-          <li>Aviation engineering design</li>
-          <li>Business trips to customer’s facilities for organization and support of engineering cooperation</li>
-          <li>Managing group of engineers</li>
+          <li>{{"company1.duty1" | translate}}</li>
+          <li>{{"company1.duty2" | translate}}</li>
+          <li>{{"company1.duty3" | translate}}</li>
         </ul>
       </div>
     </article>
     <article>
         <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between">
-          <div class="date">April 2020– June 2020</div>
+          <div class="date">2020</div>
           <div class="company">
-            <p class="speciality">IT internship</p>
-            <p class="company-name">Mirko, remote</p>
+            <p class="speciality">{{"company2.position" | translate}}</p>
+            <p class="company-name">{{"company2.company" | translate}}</p>
           </div>
         </div>
         <div class="duties">
           <ul>
-            <li>Development of React JS Roadmap for front end interns, following this
-                Roadmap</li>
-            <li>Landing Web Development (Bootstrap v4, React, Material UI)</li>
-            <li>Manual QA in medical project (Scrum, Jira, writing bug reports)</li>
-            <li>Negotiations Interpreter in medical project in Back End team</li>
-            <li>Tutoring business English for IT specialists</li>
+            <li>{{"company2.duty1" | translate}}</li>
+            <li>{{"company2.duty2" | translate}}</li>
+            <li>{{"company2.duty3" | translate}}</li>
+            <li>{{"company2.duty4" | translate}}</li>
           </ul>
         </div>
       </article>
@@ -68,37 +66,37 @@
           <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between">
             <div class="date">2015-2016</div>
             <div class="company">
-              <p class="speciality">Service Manager</p>
-              <p class="company-name">Taiwan Trade Center, Kyiv</p>
+              <p class="speciality">{{"company3.position" | translate}}</p>
+              <p class="company-name">{{"company3.company" | translate}}</p>
             </div>
           </div>
           <div class="duties">
             <ul>
-              <li>Promotion of the product exhibitions in Taiwan</li>
-              <li>Business negotiations organization</li>
+              <li>{{"company3.duty1" | translate}}</li>
+              <li>{{"company3.duty2" | translate}}</li>
             </ul>
           </div>
         </article>
   </section>
   <section class="education">
-      <h2 class="section-title">EDUCATION</h2>
+      <h2 class="section-title">{{"edu_section" | translate}}</h2>
         <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between">
           <div class="date" >2010 - 2016</div>
           <div class="university">
-            <p><strong>University:</strong> Kyiv Polytechnic Institute</p>
+            <p><strong>{{"educations.type" | translate}}:</strong> {{"educations.name" | translate}}</p>
             <p><strong>Degree:</strong> Master in Electromechanics</p>
           </div>
         </div>
   </section>
   <section class="courses">
-      <h2 class="section-title">Courses</h2>
+      <h2 class="section-title">{{"courses_section" | translate | uppercase}}</h2>
       <div class="courses-frontend school" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between">
-        <span><strong>Front-End</strong></span>
-        <div>Hillel IT school, EPAM university online course, udemy</div>
+        <span><strong>{{"courses1.study" | translate}}</strong></span>
+        <div>{{"courses1.providers" | translate}}</div>
       </div>
       <div class="courses-english school" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between">
-        <span><strong>English</strong></span>
-        <div>Green Forest school (Advanced level), Yappi school (Upper-Intermediate level)</div>
+        <span><strong>{{"courses2.study" | translate}}</strong></span>
+        <div>{{"courses2.providers" | translate}}</div>
       </div>
   </section>
 </div>

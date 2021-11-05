@@ -1,0 +1,65 @@
+{
+  "language.english": "English",
+  "language.ukrainian": "Ukrainian",
+  "welcome": "Welcome",
+  "login" : "Login",
+  "your_login" : "Your login",
+  "your_password": "Your password",
+  "hint": "Should be 4 characters long:)",
+  "logout": "Logout",
+  "resume": "Resume",
+  "hi" : "Hi there!",
+  "welcome_text1" : "If you know how to login, you can access my resume.",
+  "welcome_text2" : "In case you can not reach my resume page, I will cheer you up with my poem:)",
+  "skills" : "Skills",
+  "edu" : "Education",
+  "name" : "Hanna Pereverzieva",
+  "front-end": "Angular Developer",
+  "eng" : "Engineering",
+  "manager" : "Team management",
+  "upper-inter" : "Upper-Intermediate",
+  "from" : "from",
+  "sys_eng" : "Systems Engineer",
+  "ptu" : "Progresstech-Ukraine LLC.",
+  "front": "Angular Front End Developer",
+  "avia-design": "Aviation engineering design",
+  "trips": "Business trips to customer’s facilities for organization and support of engineering cooperation",
+  "managing" : "Managing group of engineers",
+  "exp_section": "Experience",
+  "company1" : {
+    "company": "Progresstech-Ukraine LLC.",
+    "position": "Systems Engineer, Angular",
+    "duty1" : "Aviation engineering design",
+    "duty2" : "Business trips to customer’s facilities for organization and support of engineering cooperation",
+    "duty3" :  "Managing group of engineers"
+  },
+  "company2" : {
+    "company": "Mirko, remote",
+    "position": "Internship",
+    "duty1" : "Landing page Web Development (Bootstrap v4, React, Material UI)",
+    "duty2" : "Manual QA in Healthcare app (Writing bug reports)",
+    "duty3" : "Negotiations Interpreter",
+    "duty4" : "Tutoring business English for IT specialists"
+  },
+  "company3" : {
+    "company": "Taiwan Trade Center, Kyiv",
+    "position": "Service manager",
+    "duty1" : "Promotion of the product exhibitions in Taiwan",
+    "duty2" : "Business negotiations organization"
+  },
+  "edu_section": "education",
+  "educations": {
+    "type": "University",
+    "name": "Kyiv Polytechnic Institute",
+    "degree": "Master in Electromechanics"
+  },
+  "courses_section": "Courses",
+  "courses1" : {
+    "study": "Front-end Web development",
+    "providers": "Hillel IT school, EPAM university online course, udemy"
+    },
+  "courses2": {
+    "study": "English",
+    "providers": "Green Forest school (Advanced level), Yappi school (Upper-Intermediate level)"
+  }
+}
